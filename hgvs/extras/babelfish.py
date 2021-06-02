@@ -25,7 +25,7 @@ class Babelfish:
                                              validate=False)
         self.ac_to_chr_name_map = {
             sr["refseq_ac"]: sr["name"]
-            for sr in bioutils.assemblies.get_assembly("GRCh38")["sequences"]}
+            for sr in bioutils.assemblies.get_assembly(assembly_name)["sequences"]}
 
 
 
